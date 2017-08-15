@@ -1,0 +1,16 @@
+mkdir -make directory  notes <Tab>
+cd notesls
+pwd
+/home/away/Desktop/notes
+
+cd ~ change directory
+pwd - print out the folder you are at.
+/home/away
+
+.. - means previous directory
+
+cd~/..
+
+mkdir notes
+mkdir Desktop
+  ls notes/Desktop 

@@ -1,0 +1,22 @@
+git remote
+git remote add pet
+git push pet master
+git remote add north
+rmote add ba
+
+
+fetch pet (SongBranch)
+    ---> pet/master
+        pet/unix
+        pet/git
+
+Pete 
+  ----> master  
+        unix
+        git
+
+const function = (0) => {
+   return something;
+}i
+
+function();
