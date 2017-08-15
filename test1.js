@@ -1,7 +1,7 @@
 const add = require('./algo1.js');
 
-const test = (a,b,c) => {
-  if(add(a,b) === c){
+const test = (num1,num2,total) => {
+  if(add(num1,num2) === total){
     console.log('correct');
   } else {
     console.log('incorrect');
