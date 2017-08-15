@@ -1,0 +1,18 @@
+This is vim notes
+
+vim . to open file
+m to create/edit/add childnode
+:q to quick
+:wq to save and quit
+:/ to search for text in script
+ctrl wl to move right
+ctrl wh to move left
+x to delete text character
+dd to delete whole line
+2dd to delete two lines
+h to move
+k to move
+l to move 
+j to move
+gg to move to top of page
+v to go into visual mode
