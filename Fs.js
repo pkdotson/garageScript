@@ -1,10 +1,10 @@
 const fs = require('fs');
 
-let s = '';
+let string = '';
 
 const names = (name) => {
   if(name != 'Phillip'){
-  s = s + name; 
+  string = string + name; 
   }
 }
 
@@ -14,4 +14,5 @@ const allNames = (err, files) => {
     console.log(err);
   });
 }
+
 fs.readdir('/home', allNames);
