@@ -1,16 +1,16 @@
 const fs = require('fs');
 
-let string = '';
+let allNamesWithoutMe = '';
 
 const names = (name) => {
   if(name != 'Phillip'){
-  string = string + name; 
+  allNamesWithoutMe = allNamesWithoutMe + ' ' + name; 
   }
 }
 
 const allNames = (err, files) => {
   files.forEach(names);
-  fs.writeFile('prntname.txt', s, (err) => {
+  fs.writeFile('prntname.txt', allNamesWithoutMe, (err) => {
     console.log(err);
   });
 }
