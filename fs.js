@@ -4,7 +4,7 @@ let allNamesWithoutMe = '';
 
 const names = (name) => {
   if(name != 'Phillip'){
-  allNamesWithoutMe = allNamesWithoutMe + ' ' + name; 
+    allNamesWithoutMe = allNamesWithoutMe + ' ' + name; 
   }
 }
 
