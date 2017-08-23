@@ -8,6 +8,6 @@ app.use(express.static('public'));
 app.get('/send', (req, res) => {
   const name = req.query.Name;
   const comment = req.query.Comment;
-  fs.writeFile('/home/pdiddy/garageScript/publicHtml/public/note.txt', "hey" + " " +name+" "+comment);
+  fs.writeFile('/home/pdiddy/garageScript/publicHtml/public/note.txt',`hey ${name} ${comment}`);
   res.send('done');
 });
