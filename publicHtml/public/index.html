@@ -14,7 +14,7 @@
       const name = document.getElementById('nameinp').value;
       const comment = document.getElementById('commentinp').value;
       const xhttp = new XMLHttpRequest();
-      xhttp.open('GET', `/XMLHttpRequest?name=${name}&comment=${comment}`);
+      xhttp.open('GET', `/newrequest?name=${name}&comment=${comment}`);
       xhttp.send();
     }
 </script>
