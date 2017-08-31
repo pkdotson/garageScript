@@ -7,16 +7,33 @@
 <body>
     Name: <input type="TEXT" id="nameinp"/>
     Comment: <input type="TEXT" id="commentinp"/>
-    <input type="SUBMIT" id="submit"/>  
+    <input type="SUBMIT" id="submit"/> 
+  <div>
+    <pre id ="messages" />
+  </div> 
 <script>
   const button = document.getElementById('submit');
     button.onclick = () => {
       const name = document.getElementById('nameinp').value;
       const comment = document.getElementById('commentinp').value;
       const xhttp = new XMLHttpRequest();
-      xhttp.open('GET', `/newrequest?name=${name}&comment=${comment}`);
+      xhttp.open('GET', `/submit?name=${name}&comment=${comment}`);
       xhttp.send();
     }
+  
+   const getChatFile = () => {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open('GET', 'inbox.txt');
+    xhttp.onreadystatechange = () => {
+      if(xhttp.responseText){
+        const content = document.getElementById('messages');
+        content.innerHTML = xhttp.responseText;
+      }
+    }
+    xhttp.send();
+   }
+
+  window.setInterval(getChatFile, 1000);
 </script>
 </body>
 </html>
